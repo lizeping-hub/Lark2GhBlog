@@ -1,0 +1,55 @@
+baseURL = '__BLOG_URL__'
+locale = 'zh-CN'
+defaultContentLanguage = 'zh'
+title = '__BLOG_AUTHOR__ · 文章'
+theme = 'PaperMod'
+hasCJKLanguage = true
+enableRobotsTXT = true
+
+[pagination]
+pagerSize = 10
+
+[params]
+author = '__BLOG_AUTHOR__'
+description = '关于 AI 产品、工具与工作方式的观察和思考。'
+defaultTheme = 'light'
+ShowReadingTime = true
+ShowToc = true
+TocOpen = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+disableAnchoredHeadings = true
+hideSummary = false
+DateFormat = '2006-01-02'
+
+[params.homeInfoParams]
+Title = '文章与思考'
+Content = '关于 AI 产品、工具与工作方式的观察和思考。'
+
+[params.cover]
+hiddenInSingle = true
+
+[[menu.main]]
+name = '文章'
+url = '/'
+weight = 10
+
+[[menu.main]]
+name = '个人主页'
+url = '__OWNER_SITE__'
+weight = 20
+
+[[menu.main]]
+name = 'GitHub'
+url = '__OWNER_GITHUB__'
+weight = 30
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.goldmark.extensions.typographer]
+disable = true
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3

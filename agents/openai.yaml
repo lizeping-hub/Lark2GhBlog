@@ -1,0 +1,4 @@
+interface:
+  display_name: "Lark2GhBlog"
+  short_description: "用飞书链接发布文章到自己的 GitHub Pages"
+  default_prompt: "用 Lark2GhBlog 搭建我的文章站，或把我发来的飞书文档发布到现有站点。"
